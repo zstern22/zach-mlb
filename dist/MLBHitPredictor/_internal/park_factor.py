@@ -1,0 +1,35 @@
+park_factors = {
+    "Angel Stadium": 0.96,
+    "Busch Stadium": 0.97,
+    "Chase Field": 1.03,
+    "Citi Field": 0.94,
+    "Citizens Bank Park": 1.10,
+    "Comerica Park": 0.99,
+    "Coors Field": 1.29,
+    "Dodger Stadium": 1.00,
+    "Fenway Park": 1.09,
+    "Globe Life Field": 1.02,
+    "Great American Ball Park": 1.15,
+    "Guaranteed Rate Field": 1.04,
+    "Kauffman Stadium": 0.95,
+    "loanDepot park": 0.91,
+    "Minute Maid Park": 1.00,
+    "Nationals Park": 1.04,
+    "Oakland Coliseum": 0.92,
+    "Oracle Park": 0.90,
+    "Oriole Park at Camden Yards": 1.07,
+    "Petco Park": 0.96,
+    "PNC Park": 0.98,
+    "Progressive Field": 1.01,
+    "Rogers Centre": 1.06,
+    "T-Mobile Park": 0.93,
+    "Target Field": 0.99,
+    "Tropicana Field": 0.89,
+    "Truist Park": 1.08,
+    "Wrigley Field": 1.10,
+    "Yankee Stadium": 1.12,
+    "American Family Field": 1.03
+}
+
+def get_park_factor(stadium):
+    return park_factors.get(stadium, 1.00)  # fallback to neutral
